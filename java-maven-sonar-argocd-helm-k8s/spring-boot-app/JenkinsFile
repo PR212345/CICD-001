@@ -46,8 +46,8 @@ pipeline {
         }
         stage('Update Deployment File') {
             environment {
-                GIT_REPO_NAME = "CICD-Jenkins"
-                GIT_USER = "prajwal"
+                GIT_REPO_NAME = "CICD-001"
+                GIT_USER = "PR212345"
             }
             steps {
                 withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
